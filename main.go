@@ -2,9 +2,10 @@ package main
 
 import (
 	"fmt"
-	"https://github.com/eduardopoleoflipp/go_config/config"
+	"github.com/eduardopoleoflipp/go_config"
 )
 
 func main() {
-	fmt.Println("Here there will be configuration")
+	var config = Config{name: "Main", url: "url.com"}
+	fmt.Println(config.name)
 }
